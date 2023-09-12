@@ -1,0 +1,19 @@
+{
+  "goid": "84449671abe2a5b143051dbdfdf7e716",
+  "name": "Protected API",
+  "resolutionPath": "/protected",
+  "checksum": "15ba913e634c2b6e8be904c1839c160754a89ca1",
+  "enabled": true,
+  "folderPath": "/myApis",
+  "methodsAllowed": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "tracingEnabled": false,
+  "wssProcessingEnabled": false,
+  "policy": {
+    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:Include>\n            <L7p:PolicyGuid stringValue=\"8faf8ccb-5cb2-4501-9daf-eb5d23677e02\"/>\n        </L7p:Include>\n        <L7p:HardcodedResponse>\n            <L7p:Base64ResponseBody stringValue=\"SGVsbG8gZnJvbSBMYXllcjcgQ29udGFpbmVyIEdhdGV3YXkgIFByb3RlY3RlZCBBUEk=\"/>\n        </L7p:HardcodedResponse>\n    </wsp:All>\n</wsp:Policy>\n"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "goid": "982cc1ee7369c6ca5a7ae1e4ad8ba399",
+  "name": "Rate Limited API",
+  "resolutionPath": "/rate_limited",
+  "checksum": "bb4cc190b0975b5d1305a3258aeee3ea3ea7193c",
+  "enabled": true,
+  "folderPath": "/myApis",
+  "methodsAllowed": [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE"
+  ],
+  "tracingEnabled": false,
+  "wssProcessingEnabled": false,
+  "policy": {
+    "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<wsp:Policy xmlns:L7p=\"http://www.layer7tech.com/ws/policy\" xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2002/12/policy\">\n    <wsp:All wsp:Usage=\"Required\">\n        <L7p:Include>\n            <L7p:PolicyGuid stringValue=\"89d55b95-aa01-45e7-8518-ec1370c37cfe\"/>\n        </L7p:Include>\n        <L7p:HardcodedResponse>\n            <L7p:Base64ResponseBody stringValue=\"SGVsbG8gZnJvbSBMYXllcjcgQ29udGFpbmVyIEdhdGV3YXkgUmF0ZSBMaW1pdGVkIEFQSQ==\"/>\n            <L7p:ResponseContentType stringValue=\"text/plain; charset=UTF-8\"/>\n        </L7p:HardcodedResponse>\n    </wsp:All>\n</wsp:Policy>\n"
+  }
+}
